@@ -1,4 +1,4 @@
-# Aluna: Natalia Prestes Santos Pontes — Serie Journal (Fase 1)
+# Serie Journal (Fase 1)
 
 ## Descrição do projeto
 **Serie Journal** é um CRUD frontend (React + Vite) para gerenciar séries assistidas.  
