@@ -1,0 +1,35 @@
+.serie-list h2{ margin-top:0.3rem; }
+.list-header{ display:flex; justify-content:space-between; align-items:center; gap:12px; }
+.controls{
+  display:flex;
+  gap:8px;
+}
+.controls input, .controls select{
+  padding:8px;
+  border-radius:8px;
+  border:1px solid #e6e6e6;
+  background:white;
+}
+.cards{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  margin-top:10px;
+}
+.card{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  padding: 12px;
+  border-radius: 10px;
+  background: var(--card);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.03);
+  align-items:flex-start;
+}
+.card-left h3{ margin:0 0 6px 0; }
+.meta{ color:var(--muted); margin:0 0 8px 0; }
+.small{ margin:4px 0; font-size:0.9rem; color:#333; }
+.card-actions{ display:flex; flex-direction:column; gap:8px; }
+.btn{ padding:6px 10px; border-radius:8px; border:1px solid #ddd; background:#fff; cursor:pointer; }
+.btn.danger{ background:#fff0f2; color:#a00; border-color:#ffb3c6; }
+.muted{ color:var(--muted); }

@@ -1,0 +1,87 @@
+:root {
+  --bg: #fff7fa;
+  --text: #a84c73;
+  --link: #d56b9a;
+  --link-hover: #b64f7f;
+  --card-bg: #ffffff;
+  --border: #f3cde1;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* NAV */
+nav {
+  padding: 16px;
+  border-bottom: 2px solid var(--border);
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: var(--link);
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: var(--link-hover);
+}
+
+/* Pages layout */
+main {
+  padding: 24px;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  gap: 10px;
+}
+
+input, select {
+  padding: 8px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px;
+  background: var(--link);
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: var(--link-hover);
+}
+
+/* Cards Lista */
+.serie-card {
+  border: 2px solid var(--border);
+  background: var(--card-bg);
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.page-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 80vh;
+}

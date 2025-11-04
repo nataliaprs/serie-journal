@@ -1,0 +1,30 @@
+.nav {
+  background: white;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.nav-inner {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0.6rem 1rem;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.brand{
+  font-weight:600;
+  color: #333;
+}
+.links a{
+  margin-left:1rem;
+  text-decoration: none;
+  color: #555;
+  padding: 0.3rem 0.45rem;
+  border-radius: 6px;
+}
+.links a:hover{
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  color: white;
+}
