@@ -72,7 +72,7 @@ serie-journal/
 ```
 
 
-## Como executar (passo-a-passo)
+## Como executar (passo a passo)
 
 ### Pré-requisitos
 - Node.js (versão 16+ recomendada)
