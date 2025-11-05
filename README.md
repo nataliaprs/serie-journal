@@ -48,26 +48,29 @@ Projeto desenvolvido para a disciplina **Desenvolvimento de Sistemas Frontend** 
 
 ## Estrutura do projeto
 
+```
 serie-journal/
-├─ public/
-├─ src/
-│  ├─ components/
-│  │  ├─ NavBar/        # menu de navegação
-│  │  ├─ SerieForm/     # formulário de cadastro/edição
-│  │  └─ SerieList/     # listagem das séries
-│  ├─ pages/
-│  │  ├─ Home.jsx
-│  │  ├─ Sobre.jsx
-│  │  ├─ Cadastrar.jsx
-│  │  └─ Lista.jsx
-│  ├─ data/
-│  │  └─ sampleSeries.js
-│  ├─ App.jsx
-│  ├─ main.jsx
-│  └─ index.css
-├─ .gitignore
-├─ package.json
-└─ README.md
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── NavBar/        # menu de navegação
+│   │   ├── SerieForm/     # formulário de cadastro/edição
+│   │   └── SerieList/     # listagem das séries
+│   ├── pages/
+│   │   ├── Home.jsx
+│   │   ├── Sobre.jsx
+│   │   ├── Cadastrar.jsx
+│   │   └── Lista.jsx
+│   ├── data/
+│   │   └── sampleSeries.js
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── .gitignore
+├── package.json
+└── README.md
+```
+
 
 ## Como executar (passo-a-passo)
 
