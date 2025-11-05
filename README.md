@@ -17,6 +17,20 @@ Projeto desenvolvido para a disciplina **Desenvolvimento de Sistemas Frontend** 
 - Validação básica (campos controlados) e limpeza do formulário após salvar.
 - Identidade visual suave (tema rosa pastel) mantendo simplicidade exigida pela Fase 1.
 
+## Screenshots do Projeto
+
+### Página Inicial
+![Home](./screenshots/home.png)
+
+### Sobre
+![Sobre](./screenshots/sobre.png)
+
+### Cadastrar Séries
+![Cadastrar](./screenshots/cadastrar.png)
+
+### Lista de Séries
+![Lista](./screenshots/lista.png)
+
 ---
 
 ## Campos do formulário (conforme enunciado)
