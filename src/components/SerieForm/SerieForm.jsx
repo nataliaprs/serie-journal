@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import "./SerieForm.css";
 
-
 // Formulário controlado para cadastrar ou editar uma série.
 // - No modo cadastro: cria uma nova série e adiciona ao estado (setSeries).
 // - No modo edição (editingSerie): preenche os campos e atualiza o item existente.
@@ -15,6 +14,7 @@ export default function SerieForm({ setSeries, editingSerie, setEditingSerie }) 
   const [produtora, setProdutora] = useState("");
   const [categoria, setCategoria] = useState("");
   const [dataAssistiu, setDataAssistiu] = useState("");
+  const [mensagem, setMensagem] = useState("");
 
   useEffect(() => {
     if (editingSerie) {
@@ -54,8 +54,10 @@ export default function SerieForm({ setSeries, editingSerie, setEditingSerie }) 
     if (editingSerie) {
       setSeries((prev) => prev.map((s) => (s.id === editingSerie.id ? payload : s)));
       setEditingSerie(null);
+      setMensagem("Série atualizada com sucesso!");
     } else {
       setSeries((prev) => [payload, ...prev]);
+      setMensagem("Série salva com sucesso!");
     }
 
     // limpa o formulário
@@ -66,49 +68,105 @@ export default function SerieForm({ setSeries, editingSerie, setEditingSerie }) 
     setProdutora("");
     setCategoria("");
     setDataAssistiu("");
+
+    // faz a mensagem sumir após 3 segundos
+    setTimeout(() => setMensagem(""), 3000);
   }
 
   return (
-    <form onSubmit={handleSubmit} className="form-container">
-      <label>Título:</label>
-      <input type="text" value={titulo} onChange={(e) => setTitulo(e.target.value)} />
+    <div>
+      {mensagem && (
+        <div
+          style={{
+            background: "#ffe6f0",
+            color: "#b30059",
+            padding: "10px",
+            borderRadius: "8px",
+            textAlign: "center",
+            fontWeight: "600",
+            marginBottom: "10px",
+            boxShadow: "0 2px 6px rgba(0,0,0,0.05)",
+          }}
+        >
+          {mensagem}
+        </div>
+      )}
 
-      <label>Número de Temporadas:</label>
-      <input type="number" value={temporadas} onChange={(e) => setTemporadas(e.target.value)} />
+      <form onSubmit={handleSubmit} className="form-container">
+        <label>Título:</label>
+        <input
+          type="text"
+          value={titulo}
+          onChange={(e) => setTitulo(e.target.value)}
+          required
+        />
 
-      <label>Data de Lançamento da Temporada:</label>
-      <input type="date" value={dataLancamento} onChange={(e) => setDataLancamento(e.target.value)} />
+        <label>Número de Temporadas:</label>
+        <input
+          type="number"
+          value={temporadas}
+          onChange={(e) => setTemporadas(e.target.value)}
+          required
+        />
 
-      <label>Diretor:</label>
-      <input type="text" value={diretor} onChange={(e) => setDiretor(e.target.value)} />
+        <label>Data de Lançamento da Temporada:</label>
+        <input
+          type="date"
+          value={dataLancamento}
+          onChange={(e) => setDataLancamento(e.target.value)}
+        />
 
-      <label>Produtora:</label>
-      <input type="text" value={produtora} onChange={(e) => setProdutora(e.target.value)} />
+        <label>Diretor:</label>
+        <input
+          type="text"
+          value={diretor}
+          onChange={(e) => setDiretor(e.target.value)}
+          required
+        />
 
-      <label>Categoria:</label>
-      <input type="text" value={categoria} onChange={(e) => setCategoria(e.target.value)} />
+        <label>Produtora:</label>
+        <input
+          type="text"
+          value={produtora}
+          onChange={(e) => setProdutora(e.target.value)}
+        />
 
-      <label>Data em que assistiu:</label>
-      <input type="date" value={dataAssistiu} onChange={(e) => setDataAssistiu(e.target.value)} />
+        <label>Categoria:</label>
+        <input
+          type="text"
+          value={categoria}
+          onChange={(e) => setCategoria(e.target.value)}
+        />
 
-      <div style={{ display: "flex", gap: 10 }}>
-        <button type="submit" className="btn-submit">
-          {editingSerie ? "Atualizar Série" : "Salvar Série"}
-        </button>
-        {editingSerie && (
-          <button
-            type="button"
-            className="btn"
-            onClick={() => {
-              setEditingSerie(null);
-            }}
-          >
-            Cancelar
+        <label>Data em que assistiu:</label>
+        <input
+          type="date"
+          value={dataAssistiu}
+          onChange={(e) => setDataAssistiu(e.target.value)}
+        />
+
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            gap: 10,
+            marginTop: "10px",
+          }}
+        >
+          <button type="submit" className="btn-submit">
+            {editingSerie ? "Atualizar Série" : "Salvar Série"}
           </button>
-        )}
-      </div>
-    </form>
+          {editingSerie && (
+            <button
+              type="button"
+              className="btn"
+              onClick={() => setEditingSerie(null)}
+            >
+              Cancelar
+            </button>
+          )}
+        </div>
+      </form>
+    </div>
   );
 }
-
-

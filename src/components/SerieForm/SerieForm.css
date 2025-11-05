@@ -31,3 +31,19 @@ button {
 button:hover {
   background-color: #ff84b7;
 }
+
+.btn-submit {
+  background-color: #f4aacb;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-submit:hover {
+  background-color: #ff84b7;
+  transform: translateY(-1px);
+}
