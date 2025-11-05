@@ -1,6 +1,12 @@
 import { useState, useEffect } from "react";
 import "./SerieForm.css";
 
+
+// Formulário controlado para cadastrar ou editar uma série.
+// - No modo cadastro: cria uma nova série e adiciona ao estado (setSeries).
+// - No modo edição (editingSerie): preenche os campos e atualiza o item existente.
+// - Limpa os campos após salvar/atualizar.
+
 export default function SerieForm({ setSeries, editingSerie, setEditingSerie }) {
   const [titulo, setTitulo] = useState("");
   const [temporadas, setTemporadas] = useState("");

@@ -1,5 +1,7 @@
 import SerieForm from "../components/SerieForm/SerieForm";
 
+// Página que contém o formulário (SerieForm).
+// Recebe setSeries, editingSerie e setEditingSerie do App para suportar edição.
 export default function Cadastrar({ setSeries, editingSerie, setEditingSerie }) {
   return (
     <div className="page-center">

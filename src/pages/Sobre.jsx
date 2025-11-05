@@ -1,3 +1,5 @@
+// Página informativa sobre o projeto.
+
 export default function Sobre() {
   return (
     <div className="page-center">

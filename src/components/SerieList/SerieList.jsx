@@ -2,6 +2,11 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./SerieList.css";
 
+// Componente de listagem que mostra todas as séries em formato de linhas,
+// cada linha com informações separadas por " - " e os botões Editar / Excluir.
+// Recebe `series` e `setSeries` via props do App.
+// Ao clicar Editar chama setEditingSerie e navega para a página de cadastro.
+
 export default function SerieList({ series = [], setSeries, setEditingSerie }) {
   const navigate = useNavigate();
 

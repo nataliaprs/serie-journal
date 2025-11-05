@@ -51,20 +51,20 @@ Projeto desenvolvido para a disciplina **Desenvolvimento de Sistemas Frontend** 
 serie-journal/
 ├─ public/
 ├─ src/
-│ ├─ components/
-│ │ ├─ NavBar/ (NavBar.jsx, NavBar.css)
-│ │ ├─ SerieForm/ (SerieForm.jsx, SerieForm.css)
-│ │ └─ SerieList/ (SerieList.jsx, SerieList.css)
-│ ├─ pages/
-│ │ ├─ Home.jsx
-│ │ ├─ Sobre.jsx
-│ │ ├─ Cadastrar.jsx
-│ │ └─ Lista.jsx
-│ ├─ data/
-│ │ └─ sampleSeries.js
-│ ├─ App.jsx
-│ ├─ main.jsx
-│ └─ index.css
+│  ├─ components/
+│  │  ├─ NavBar/        # menu de navegação
+│  │  ├─ SerieForm/     # formulário de cadastro/edição
+│  │  └─ SerieList/     # listagem das séries
+│  ├─ pages/
+│  │  ├─ Home.jsx
+│  │  ├─ Sobre.jsx
+│  │  ├─ Cadastrar.jsx
+│  │  └─ Lista.jsx
+│  ├─ data/
+│  │  └─ sampleSeries.js
+│  ├─ App.jsx
+│  ├─ main.jsx
+│  └─ index.css
 ├─ .gitignore
 ├─ package.json
 └─ README.md

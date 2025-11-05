@@ -1,3 +1,4 @@
+// Página inicial informativa (mensagem de boas-vindas).
 export default function Home() {
   return (
     <div className="page-center">
