@@ -15,7 +15,7 @@ Projeto desenvolvido para a disciplina **Desenvolvimento de Sistemas Frontend** 
 - Página "Lista" com visualização das séries em formato de linha (um item por linha) e botões **Editar** / **Excluir** à direita.
 - Ao clicar **Editar**, o formulário é preenchido com os dados da série e permite atualizar.
 - Validação básica (campos controlados) e limpeza do formulário após salvar.
-- Identidade visual suave (tema rosa pastel) mantendo simplicidade exigida pela Fase 1.
+- Identidade visual suave (tema rosa pastel) mantendo simplicidade.
 
 ## Screenshots do Projeto
 
@@ -41,8 +41,6 @@ Projeto desenvolvido para a disciplina **Desenvolvimento de Sistemas Frontend** 
 - Produtora
 - Categoria
 - Data em que assistiu
-
-(opcionais: campos como ator ou plataforma estão presentes no `sampleSeries` para demonstração)
 
 ---
 
