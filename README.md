@@ -1,24 +1,25 @@
-# Serie Journal (Fase 1)
+# Serie Journal (Fase 1) — Natalia Prestes Santos Pontes
 
-## Descrição do projeto
+## Descrição
 **Serie Journal** é um CRUD frontend (React + Vite) para gerenciar séries assistidas.  
-Fase 1: frontend estático que salva dados em `localStorage`, implementando criação, leitura, edição parcial (ou instruções para editar), e remoção de séries.
+Versão Fase 1: frontend estático, com criação, listagem, edição local e remoção de séries. O estado é mantido em memória (ex.: `useState`) — persistência local via `localStorage` pode ser adicionada/ativada conforme necessidade.
 
-Este projeto foi desenvolvido como atividade das aulas 1 a 5 da disciplina de Desenvolvimento de Sistemas Frontend.
+Projeto desenvolvido para a disciplina **Desenvolvimento de Sistemas Frontend** (Aulas 1–5).
 
 ---
 
 ## Funcionalidades implementadas
-- Página inicial (home) com mensagem de boas-vindas.
-- Página "Sobre" com descrição do projeto e identificação do aluno.
-- Página de cadastro com formulário para adicionar séries (campos obrigatórios pedidos no enunciado).
-- Página de listagem com pesquisa, filtro e ação de exclusão.
-- Validação básica do formulário (campos obrigatórios e validação simples).
-- Persistência local utilizando `localStorage`.
+- Página inicial (Home) com mensagem de boas-vindas.
+- Página "Sobre" com breve descrição do projeto.
+- Página "Cadastrar" com formulário para adicionar/editar séries.
+- Página "Lista" com visualização das séries em formato de linha (um item por linha) e botões **Editar** / **Excluir** à direita.
+- Ao clicar **Editar**, o formulário é preenchido com os dados da série e permite atualizar.
+- Validação básica (campos controlados) e limpeza do formulário após salvar.
+- Identidade visual suave (tema rosa pastel) mantendo simplicidade exigida pela Fase 1.
 
 ---
 
-## Campos do formulário (obrigatórios, conforme enunciado)
+## Campos do formulário (conforme enunciado)
 - Título
 - Número de Temporadas
 - Data de Lançamento da Temporada
@@ -26,6 +27,8 @@ Este projeto foi desenvolvido como atividade das aulas 1 a 5 da disciplina de De
 - Produtora
 - Categoria
 - Data em que assistiu
+
+(opcionais: campos como ator ou plataforma estão presentes no `sampleSeries` para demonstração)
 
 ---
 

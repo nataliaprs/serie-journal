@@ -1,11 +1,18 @@
 import SerieForm from "../components/SerieForm/SerieForm";
 
-export default function Cadastrar({ setSeries }) {
+export default function Cadastrar({ setSeries, editingSerie, setEditingSerie }) {
   return (
     <div className="page-center">
-      <h1>Cadastrar Série</h1>
-      <SerieForm setSeries={setSeries} />
+      <div className="form-wrapper">
+        <h1 style={{ marginTop: 0 }}>{editingSerie ? "Editar Série" : "Cadastrar Nova Série"}</h1>
+        <SerieForm
+          setSeries={setSeries}
+          editingSerie={editingSerie}
+          setEditingSerie={setEditingSerie}
+        />
+      </div>
     </div>
   );
 }
+
 
